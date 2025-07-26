@@ -4,9 +4,7 @@ from app.models import *
 from app.serializers import *
 
 from rest_framework.permissions import IsAuthenticated,AllowAny
-
-
-
+#newly added
 
 class BooksView(viewsets.ModelViewSet):
     queryset = Books.objects.all()
@@ -29,4 +27,4 @@ class StudentView(viewsets.ModelViewSet):
 class CustomUserView(viewsets.ModelViewSet):
     queryset = CustomUser.objects.all()
     serializer_class = CustomUserSerializer
-
+# new next

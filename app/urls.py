@@ -7,7 +7,7 @@ from rest_framework_simplejwt.views import (
 )
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 
-
+# new url
 router=routers.DefaultRouter()
 router.register('student',StudentView,basename='student')
 router.register('customuser',CustomUserView,basename='customuser')
